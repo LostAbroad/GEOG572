@@ -1,0 +1,109 @@
+#title {
+text-align: center;
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    background: lightgray;
+}
+
+#title {
+    color: darkblue;
+    padding-top: 30px;
+}
+
+.d3-tip {
+    line-height: 1.2;
+    padding: 9px;
+    background: lightgray;
+    color: slateblue;
+    border-radius: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 450;
+    background-color: lightcyan;
+}
+
+#charts{
+    float: left;
+    background: lightblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.chart {
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top:  20px;
+    color: darkblue
+}
+
+.reset {
+    padding-left: 20px;
+    font-size: 9px;
+    color: blue;
+}
+
+.background.bar {
+    fill: blue;
+}
+
+.foreground.bar {
+    fill: violet;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+    font-size: 12px;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.brush rect.extent {
+    fill: violet;
+    fill-opacity: .125;
+}
+
+.brush .resize path {
+    fill: lightgray;
+    stroke: darkgray;
+}
+
+#chart path {
+stroke: white;
+}
+
+#chart path.highlighted {
+    cursor: ;
+}
+
+.counties {
+    fill: none;
+    stroke: gray;
+}
+
+.q0-9 { fill:darkblue; }
+.q1-9 { fill:blue; }
+.q2-9 { fill:cyan; }
+.q3-9 { fill:lightblue; }
+.q4-9 { fill:orange; }
+.q5-9 { fill:salmon; }
+.q6-9 { fill:red; }
+.q7-9 { fill:darkred; }
+.q8-9 { fill:purple; }
+
+#map {
+    float: top;
+    padding-left: 5px;
+    padding-top: 5px;
+    display: inline-block;
+}

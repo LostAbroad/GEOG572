@@ -1,0 +1,134 @@
+.d3-tip {
+    line-height: 1.2;
+    padding: 9px;
+    background: lightgray;
+    color: slateblue;
+    border-radius: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 450;
+    background-color: lightcyan;
+}
+
+#charts{
+    float: left;
+    background: lightblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-shadow: 0 0 5px 2px black; 
+    margin-left: 10px;
+}
+
+#map {
+    float: top;
+    margin: 10px;
+    padding-left: 5px;
+    display: inline-block;
+    box-shadow: 0 0 5px 2px black;
+}
+
+.chart {
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top:  10px;
+    color: darkblue
+}
+
+.reset {
+    padding-left: 20px;
+    font-size: 9px;
+    color: blue;
+}
+
+.background.bar {
+    fill: blue;
+}
+
+.foreground.bar {
+    fill: violet;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+    font-size: 12px;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.brush rect.extent {
+    fill: violet;
+    fill-opacity: .125;
+}
+
+.brush .resize path {
+    fill: lightgray;
+    stroke: darkgray;
+}
+
+#chart path {
+stroke: white;
+}
+
+.counties {
+    fill: none;
+    stroke: gray;
+}
+
+.q0-9 { fill:darkblue; }
+.q1-9 { fill:blue; }
+.q2-9 { fill:cyan; }
+.q3-9 { fill:lightblue; }
+.q4-9 { fill:orange; }
+.q5-9 { fill:salmon; }
+.q6-9 { fill:red; }
+.q7-9 { fill:darkred; }
+.q8-9 { fill:purple; }
+
+.container-fluid {
+	max-width: 1500px;
+	background-color: darkgray;
+}
+
+
+#top {
+	background-image: url("/images/education.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px 2px #282a2d;
+	height: 180px;
+	background-position: 0;
+}
+
+h1 {
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em
+}
+
+nav {
+	background-color: darkcyan;
+}
+
+#dropdown {
+	height: 2px;
+	margin-left: 58%;
+}
+
+footer {
+	height: 50px;
+	background-color: cyan;
+    margin-top: 10px;
+}
+
+#figure{
+    padding-top: 100px;
+}

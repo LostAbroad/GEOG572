@@ -1,602 +1,130 @@
-<html lang="en">
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Depicting Jason's projects and maps through the years.">
-    <meta name="author" content="Jason Heutmaker">
-    <title>Jason Heutmaker GIS and Mapping</title>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Comparing Unemployment Rates to Education</title>
+        
+    <!-- Meta tags for helping search engines-->
+    <meta name="author" content="J. Heutmaker">
+    <meta name="description" content="An interactive map comparing unemployment rates to education levels within the United States using date from 2017.">
+    <meta name="keywords" content="interactive, unemployment, education, 2017">
     
-    <!--BootStrap-->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!--Theme-->
-    <link href="style.css" rel="stylesheet">
-
-    <!--Fonts -->
-    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.5/css/fork-awesome.min.css" integrity="sha256-P64qV9gULPHiZTdrS1nM59toStkgjM0dsf5mK/UwBV4=" crossorigin="anonymous">
-
-</head>
-
-<body id="page-top" class="index" data-gr-c-s-loaded="true" style="">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom affix">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Navigation</span> Directory<i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Jason Heutmaker</a>
-            </div>
-
-            <!--Nav links-->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll active">
-                        <a href="#portfolio">Projects and More</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <span class="name">Jason Heutmaker</span>
-                        <span class="skills">Programmer * Mapper * Information Specialist</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!--Grid -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects and More</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>Cartography and Infographics</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 portfolio-item">
-                    <h4>The California Drought</h4>
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/california-drought.PNG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <h4>Civil War Casualties</h4>
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/civil_war.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <h4>Border Dispute</h4>
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/czech-republic.PNG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <h4>Wine Production in Europe</h4>
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/Wine.PNG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <h4>The Cost of Earthquakes</h4>
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/CostOfEarthquakes.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <h4>Cycling Competition</h4>
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/CyclingPath.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3>Remote Sensing and More</h3>
-                    </div>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <h4>Spectral Reflectance</h4>
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/spectral-reflectance.PNG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <h4>Image Classification</h4>
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/projects/image_classification.PNG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-12 text-center">
-                        <h5>*For examples of programming scripts please feel free to contact me!*</h5>
-                    </div>
-                <div class="container">
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p> <img class="img-responsive" src="img/me.png" alt=""></p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Hi, I’m Jason! I am currently enrolled at Wisconsin Madison earning my Masters Degree in GIS *See resume for details* When I am not working or doing Grad work I can be found attempting to get my friends to travel across the world with me. So far I am at twenty-nine countries and the hope is to some day be able to see and experience well over a hundred!<br> <br>If you have any questions please do not hesitate to ask.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Resume</h2>
-                </div>
-            </div>
-            <!--Work-->
-	       <div class="Work Experience">
-		      <div class="row">
-				<div class="col-lg-2 col-lg-offset-0">
-					<h3><i class="fa fa-list-ul" aria-hidden="true"></i> Experience</h3>
-				</div>
-				<div class="col-lg-7">
-					<p><t>GIS Field Technician</t><br>
-						UDC: Utility Data Contractors <br>
-					</p>
-					<p><more>The collection of data in the field using a hand-held computer and a laser measuring device to read and record angles and heights of electric facilities on poles. Use of ESRI including ArcGIS, Collector, and utility specific GIS tools.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>May 2018 - Present</sm></p>
-				</div>
-				<div class="col-lg-7 col-lg-offset-2">
-					<p><t>Environmental GIS Technician</t><br>
-						Trident Environmental and Engineering<br>
-					</p>
-					<p><more>Supervision and taking sample measurements based on field conditions mostly pertaining to lead based soil sampling, PPE and Vehicle Safety Compliance, and coordination with facilities managers.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>July 2016 - May 2018</sm></p>
-				</div>
-		      </div>
-		      <br>
-		      <hr>
-	       </div>
-            <!--Educaiton/Colleges-->   
-            <div class="Degree">    
-                <div class="row">
-                    <div class="col-lg-2 col-lg-offset-0">
-				        <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Relevant Degrees and Course Work</h3>
-                    </div>
-                    <div class="col-lg-7 ">
-				        <p><t>University of Wisconsin - Madison</t><br>
-						Masters of GIS and Web Map Programming<br>
-				            <i>2018-2020: Currently enrolled</i>
-				        </p>
-                    </div>
-                    <div class="col-lg-3">
-				        <p><sm>May 2020</sm><br>
-				        </p>
-                    </div>
-                    <div class="col-lg-7">
-                        <p><t>Humboldt State University</t><br>
-                            Bachelor of Science In Cellular Biology<br>
-                            <i>Advanced coursework in Applied and Molecular Biology including Bacteriology, Genetics, and Cellular Biology</i><br><br>
-                            Bachelor of Science in Botany<br>
-                            <i>Advance coursework in Environmental Science and Taxonomic courses including Principle of Ecology, Plant Taxonomy, Developmental Plant Anatomy, and Phycology</i><br><br>
-                            Minor in Chemistry<br>
-                            <i>Advance coursework in Chemistry including courses in Organic Chemistry, Biochemistry, General Physical Chemistry, and NMR Techniques.</i><br><br>
-                            Minor in Geospatial Information Systems<br>
-                            <i>Advance coursework in GIS and ENVI software including courses in Remote Sensing, GIS Programming, Cartography, and Routing Modules.</i><br>
-                                <i>2012-2017</i>
-                        </p>
-                    </div>
-                    <div class="col-lg-3">
-                            <p><sm>May 2017</sm></p>
-                    </div>
-                </div>
-                <br>
-                <hr>
-            </div>  
-            <!--Community Service and Certifications -->
-            <div class="Community Service and Certifications">
-                <div class="row">
-                        <div class="col-lg-2">
-                            <h3><i class="fa fa-star" aria-hidden="true"></i> Community Service &amp; Certifications</h3>
-                        </div>
-                        <div class="col-lg-7">
-                            <p><t>Educational Sponsorship of a Tibetan Refugee</t><br> 2003-Present
-                            </p>
-                        </div>
-                        <div class="col-lg-7">
-                            <p><t>Volunteer Farmhand for Horse Rescue Center</t><br> 2006-2015
-                            </p>
-                        </div>
-                        <div class="col-lg-7 col-lg-offset-2">
-                            <p><t>College Speaker For Enochs</t><br>2012-Present <br><br> <b><i>And Much More</i></b>
-                            </p>
-                        </div>
-                </div>
-                <br>
-                <hr>
-            </div>  
+    <!--Stylesheets and linking to outside sources-->
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        
+        <!-- Personal CSS-->
+        <link rel="stylesheet" type="text/css" href="css/main_stylesheet.css"/>
+        
+        <!-- D3 library-->
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://d3js.org/queue.v1.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        
+        <!--Filter tool-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.1/crossfilter.min.js"></script>
+        
+        <!--"Tips" Tool-->
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>  
+    </head>
     
-            <!--SKILLS -->
-            <div class="Skills">
-                <div class="row">
-                        <div class="col-lg-2 col-lg-offset-0">
-                            <h3><i class="fa fa-check-square-o" aria-hidden="true"></i> Skills</h3>
-                        </div>
-                        <div class="col-lg-10">
-                            <p><t>GIS Related</t><br>
-                                ArcGIS Pro, ArcGIS Desktop, ArcGIS Online (Basics), QGIS (Basics), ENVI, GDAL/OGR
-                            </p>
-                        </div>      
-                        <div class="col-lg-10 col-lg-offset-2">
-                            <p><t>Cartography Related</t><br>
-                                Illustrator, Photoshop
-                            </p>
-                        </div>
-                        <div class="col-lg-10 col-lg-offset-2">
-                            <p><t>Programming Related</t><br>
-                                Python, Windows Command Line, SQL (Basics), CSS (Basics), HTML (Basics), Java(Basics)
-                            </p>
-                        </div>
-                        <div class="col-lg-10 col-lg-offset-2">
-                            <p><t>General</t><br>
-                                Word, Excel, R (Basics), Powerpoint, Access (Basics)
-                            </p>
-                        </div>
-                </div>
-                <br>
-            </div>    
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="img/Resume_2018.pdf" target="_blank" class="btn btn-lg btn-outline">
-                    <i class="fa fa-download"></i> Download Resume
-                </a>
-            </div>
-        </div>
-        </section>
-    
-    <!--Footer-->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-lg-8 col-lg-offset-2 text-center">
-                        <h3>Contact Me At:</h3>
-                        <h5>jvh72@humboldt.edu</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <body>
+        <!--Navbar for ease of use on website-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+		<a class="navbar-brand"></a>
+            
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+            
+        <!--Links to outisde pages-->
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+                
+                <li class= "nav-image">
+                <a class="figure-img" href="https://lostabroad.github.io/jasonheutmaker/"><img class="figure-img" src="images/cloud-01.svg" alt="logo " width="30px "/></a>
+                </li>
+                
+				<li class="nav-item active">
+					<a class="nav-link" href="https://lostabroad.github.io/jasonheutmaker/">Home <span class="sr-only"></span></a>
+				</li>
+                
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work Examples</a>
+                    
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="https://lostabroad.github.io/jasonheutmaker/#portfolio">Projects</a>
+						<a class="dropdown-item" href="https://lostabroad.github.io/jasonheutmaker/#resume">Resume</a>
+						<a class="dropdown-item" href="https://lostabroad.github.io/jasonheutmaker/#about">About</a>
+					</div>
+				</li>
+			</ul>
+            
+            <!-- Sets up a searchbar-->
+			<form id="searchform" class="form-inline my-2 my-lg-0">
+				<input id="test" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+				<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+        
+    <!-- Creates Title-->
+    <main role="Nav_Title" class="container-fluid">
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+        <div id="top" class="text-center mt-5 pt-5">
+            <h1>How Education Affects Unemployment</h1>
+            <p class="lead">Education has been considered a cornerstone for a better life, better pay, and more flexibility<br> Below you can see how education levels affect the unemployment rate by county.</p>
+        </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+        <center>
+            <div id="dropdown" class="row">
+                <p id=filter></p>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Lake Shasta: California Drought</h2>
-                            <iframe src="img/projects/california-drought.pdf#view=FitH,top" width="100%" height="100%"></iframe>
-                            <p>Since California has become infamously known for its droughts and its vegetation has adapted to withstand dry conditions, it has become a reservoir of information for how vegetation and wildlife react to a long term drought. The main objective of this study is to conduct an analysis of Lake Shasta to identify as well assess the water level fluctuations that have been influenced by the longer term drought conditions which occurred between 2010 and 2014 (California's Drought, 2015) </p>
-                            <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong>12 December 2016</strong>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
+        </center>  
+    <hr />
+	</main>
+        
+    <main role="Chart_Map_Titles">
+        
+            <!--Creates area for Charts to display and displays titles-->
+            <div id="charts">
+              <div id="unemployment-chart" class="chart">
+                <div class="title">Unemployment Rate 2017</div>
+              </div>
+              <div id="collegeGrad-chart" class="chart">
+                <div class="title">College Graduate Rate 2017</div>
+              </div>
+              <div id="someCollege-chart" class="chart">
+                <div class="title">Some College Rate 2017</div>
+              </div>
+              <div id="highschoolGrad-chart" class="chart">
+                <div class="title">Highschool Graduate Rate 2017</div>
+              </div>
+              <div id="noHighschool-chart" class="chart">
+                <div class="title">Highschool Dropout Rate 2017</div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+        
+            <!--Creates map and legend-->
+            <div id="map">
+              <div id="map-legend">
+                <div class="title">Unemployment Rate 2017
+                  <div class="title">0% - - - - - - - - - - - - - - - - 22%</div>
                 </div>
+              </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Civil War Casualties</h2>
-                            <img class="img-responsive" src="" alt="">
-                            <iframe src="img/projects/civil_war2.pdf#view=FitH,top" width="100%" height="100%"></iframe>
-                            <p></p>
-                            <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong>July 2016
-                                    </strong>
-                                </li>
-                            </ul><br>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Border Dispute</h2>
-                            <iframe src="img/projects/czech-republic.pdf#view=FitH,top" width="100%" height="100%"></iframe>
-                            <p>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong>June 2016
-                                    </strong>
-                                </li>
-                            </ul><br>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2></h2>
-                            <img src="img/projects/CostOfEarthquakes.png" class="img-responsive" alt="">
-                            <p>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong>2018
-                                    </strong>
-                                </li>
-                            </ul><br>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2></h2>
-                            <img src="img/projects/CyclingPath.png" class="img-responsive" alt="">
-                            <p>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong>2018
-                                    </strong>
-                                </li>
-                            </ul><br>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Wine Production in Europe</h2>
-                            <iframe src="img/projects/european-wine.pdf#view=FitH,top" width="100%" height="100%"></iframe>
-                            <p>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong> May 2016
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Spectral Reflectance</h2>
-                            <iframe src="img/projects/spectral-reflectance.pdf#view=FitH,top" width="100%" height="100%"></iframe>
-                            <p>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong> September 2016
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <div class="modal-body">
-                            <h2>Image Classification</h2>
-                            <iframe src="img/projects/image_classification.pdf#view=FitH,top" width="100%" height="100%"></iframe>
-                            <p></p> 
-                           <ul class="list-inline item-details">
-                                <li>Creation Date
-                                    <strong> November 2016
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-        </div>
-    </div>
-    <!-- jQuery -->
-    <script src="jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js></script>
-
-    
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
-</body>
+        
+        </main> 
+        
+        <footer></footer>
+        
+        <!--Links to custom javascript-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <script src="js/main.js"></script>
+    </body>
+        
 </html>
